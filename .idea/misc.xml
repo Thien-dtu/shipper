@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_chat.xml" value="0.25" />
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_manage_account.xml" value="0.25" />
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_map.xml" value="0.22447916666666667" />
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_report.xml" value="0.33" />
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_setting.xml" value="0.33" />
+        <entry key="..\:/D/CDIO-4/app_Shipper/Amateur_Shipper-master/Amatuer_Shipper-master/app/src/main/res/layout/fragment_tab_edit_profile1.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

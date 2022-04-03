@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="1"
+        android:background="@drawable/background_detail_post">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_poster_tab_nhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_narrow"
+            android:layout_weight="1"
+            android:text="Mac Van Khoa fanpage"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/label_da_nhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Nhận đơn"
+                android:textSize="7sp"
+                android:background="@drawable/background_da_nhan"/>
+            <TextView
+                android:id="@+id/label_dang_giao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Nhận hàng"
+                android:textSize="7sp"
+                android:background="@drawable/background_dang_giao"/>
+            <TextView
+                android:id="@+id/label_hoan_thanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Hoàn thành"
+                android:textSize="7sp"
+                android:background="@drawable/background_hoan_thanh"/>
+            <TextView
+                android:id="@+id/label_huy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Hủy"
+                android:textSize="7sp"
+                android:background="@drawable/background_huy"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_narrow"
+            android:text="12345678"
+            android:textColor="@color/colorText"/>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhận hàng từ"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="#3f4254"/>
+                <TextView
+                    android:id="@+id/txt_start_place_tab_nhan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/archivo_narrow"
+                    android:text="285/33 Trần Cao Vân - Đà Nẵng "
+                    android:textColor="@color/colorText" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giao tới"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#3f4254"/>
+            <TextView
+                android:id="@+id/txt_end_place_tab_nhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/archivo_narrow"
+                android:text="234 Tôn Đản- Đà Nẵng "
+                android:textColor="@color/colorText"/>
+            <ImageView
+                android:id="@+id/img_timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_alarm"
+                android:layout_gravity="end"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

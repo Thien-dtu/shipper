@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".Activity.GetOTP">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="start"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_arrow_back_24"></Button>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_marginTop="20dp"
+            android:id="@+id/animation_view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:lottie_rawRes="@raw/shipper"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Mã xác nhận OTP"
+            android:textColor="@color/colorText"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:text="Nhập số điện thoại."
+            android:gravity="center_horizontal"
+            android:textColor="@color/cTextSecondary"
+            android:textSize="14sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="+84-"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                ></TextView>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:hint="123456789"
+                android:maxLength="9"
+                android:id="@+id/inputMobile"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:textColor="@color/cTextPrimary"></EditText>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="70dp"
+            android:background="@color/colorDivider"></View>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/buttonGetOTP"
+                android:layout_margin="30dp"
+                android:background="@drawable/backgournd_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nhận OTP"
+                android:textColor="@color/cWhite"
+                android:textStyle="bold"
+                android:textSize="16sp"></Button>
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/amber"
+                android:id="@+id/progressBar"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:visibility="gone"></ProgressBar>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
